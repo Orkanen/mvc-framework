@@ -18,8 +18,16 @@ class DiceController extends Controller
      * @param  string  $message
      * @return \Illuminate\View\View
      */
-    public function index($message=null)
+    public function index()
     {
+        session()->forget('key', 'die', 'dice', 'diceHand');
+        $die = new Dice();
+        $dice = new DiceGraphic();
+        $diceHand = new DiceHand(1);
+        session(['die' => $die,
+            'dice' => $dice,
+            'diceHand' => $diceHand
+        ]);
         return view('dice', [
             'message' => $message ?? "0"
         ]);
@@ -27,15 +35,17 @@ class DiceController extends Controller
 
     public function postIndex(Request $request)
     {
-
-      $die = new Dice();
-      $dice = new DiceGraphic();
-      $diceHand = new DiceHand(1);
+      $die = session('die');
+      $dice = session('dice');
+      $diceHand = session('diceHand');
+      $previousRoll = $request->session()->all();
+      //$previousRoll = $diceHand->getLastRoll();
       $diceHand->roll();
 
       $validated = $request->title + $diceHand->getSum();
       return view('dice', [
-          'message' => $message ?? $validated
+          'message' => $validated,
+          'previousRoll' => $previousRoll ?? null
       ]);
     }
 }
