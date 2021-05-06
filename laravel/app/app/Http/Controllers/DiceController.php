@@ -20,13 +20,13 @@ class DiceController extends Controller
      */
     public function index()
     {
-        session()->forget('key', 'die', 'dice', 'diceHand');
+        //session()->forget('key', 'die', 'dice', 'diceHand');
         $die = new Dice();
         $dice = new DiceGraphic();
         $diceHand = new DiceHand(1);
-        session(['die' => $die,
-            'dice' => $dice,
-            'diceHand' => $diceHand
+        session(['die' => serialize($die),
+            'dice' => serialize($dice),
+            'diceHand' => serialize($diceHand)
         ]);
         return view('dice', [
             'message' => $message ?? "0"
@@ -35,14 +35,23 @@ class DiceController extends Controller
 
     public function postIndex(Request $request)
     {
-      $die = session('die');
-      $dice = session('dice');
-      $diceHand = session('diceHand');
-      $previousRoll = $request->session()->all();
-      //$previousRoll = $diceHand->getLastRoll();
+      $die = unserialize(session()->pull('die'));
+      $dice = unserialize(session()->pull('dice'));
+      $diceHand = unserialize(session()->pull('diceHand'));
+      //$previousRoll = $diceHand->getSum();
       $diceHand->roll();
+      $previousRoll = $diceHand->getRollSum();
+      $validated = $diceHand->getSum();
+      if($previousRoll > 21) {
+          $previousRoll = "You Lose";
+          $diceHand->setRollSum();
+      }
 
-      $validated = $request->title + $diceHand->getSum();
+      session()->put('die', serialize($die));
+      session()->put('dice', serialize($dice));
+      session()->put('diceHand', serialize($diceHand));
+      session()->save();
+
       return view('dice', [
           'message' => $validated,
           'previousRoll' => $previousRoll ?? null

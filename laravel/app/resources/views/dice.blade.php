@@ -2,7 +2,8 @@
 
 <p>{{ $message }}</p>
 
-<p>{{ json_encode($previousRoll ?? null, TRUE) }}</p>
+<!--<p>{{ json_encode($previousRoll ?? null, TRUE) }}</p>-->
+{{ $previousRoll ?? null }}
 
 
 <form action="{{url('/dice/roll')}}" method="post">

@@ -18,6 +18,7 @@ class DiceHand
 {
     public array $dices;
     private int $sum = 0;
+    private int $rollSum = 0;
     private int $amount = 1;
 
     public function __construct(int $die = 1)
@@ -30,10 +31,12 @@ class DiceHand
 
     public function roll()
     {
+        //this!!
         $this->sum = 0;
         for ($i = 0; $i <= $this->amount; $i++) {
             $this->sum += $this->dices[$i]->roll();
         }
+        $this->rollSum += $this->sum;
     }
 
     public function getDice(array $options)
@@ -63,6 +66,16 @@ class DiceHand
     public function getSum(): int
     {
         return $this->sum;
+    }
+
+    public function getRollSum(): int
+    {
+        return $this->rollSum;
+    }
+
+    public function setRollSum()
+    {
+        $this->rollSum = 0;
     }
 
 /*
