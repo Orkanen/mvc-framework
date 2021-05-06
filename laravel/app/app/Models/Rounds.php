@@ -33,6 +33,7 @@ class Rounds
 
     public function curRoll(int $human = 0)
     {
+        $this->sum = 0;
         for ($this->sum; $this->sum <= $human;) {
             $this->sum += $this->dices[0]->roll();
         };

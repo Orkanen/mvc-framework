@@ -29,6 +29,14 @@ class DiceHand
         }
     }
 
+    public function createDice(int $die = 0)
+    {
+        $this->amount = $die;
+        for ($i = 0; $i <= $this->amount; $i++) {
+            $this->dices[$i] = new DiceGraphic();
+        }
+    }
+
     public function roll()
     {
         //this!!

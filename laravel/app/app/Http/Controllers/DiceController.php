@@ -24,9 +24,11 @@ class DiceController extends Controller
         $die = new Dice();
         $dice = new DiceGraphic();
         $diceHand = new DiceHand(1);
+        $rounds = new Rounds();
         session(['die' => serialize($die),
             'dice' => serialize($dice),
-            'diceHand' => serialize($diceHand)
+            'diceHand' => serialize($diceHand),
+            'rounds' => serialize($rounds)
         ]);
         return view('dice', [
             'message' => $message ?? "0"
@@ -38,23 +40,46 @@ class DiceController extends Controller
       $die = unserialize(session()->pull('die'));
       $dice = unserialize(session()->pull('dice'));
       $diceHand = unserialize(session()->pull('diceHand'));
+      $rounds = unserialize(session()->pull('rounds'));
       //$previousRoll = $diceHand->getSum();
-      $diceHand->roll();
-      $previousRoll = $diceHand->getRollSum();
-      $validated = $diceHand->getSum();
-      if($previousRoll > 21) {
-          $previousRoll = "You Lose";
+      if ($request->amount == "stop") {
+          $rounds->curRoll($diceHand->getRollSum());
+          $robotRolled = $rounds->roboSum();
+          if ($robotRolled < 22 && $robotRolled > $diceHand->getRollSum()) {
+              $previousRoll = "You Lose";
+          } else {
+              $previousRoll = "You Win";
+          }
           $diceHand->setRollSum();
+      } else {
+          if ($request->amount == "dice1") {
+              $diceHand->createDice();
+          } else {
+              $diceHand->createDice(1);
+          }
+          $diceHand->roll();
+          $previousRoll = $diceHand->getRollSum();
+          $validated = $diceHand->getSum();
+
+          if ($previousRoll > 21) {
+              $previousRoll = "You Lose";
+              $diceHand->setRollSum();
+          } elseif ($previousRoll == 21) {
+              $previousRoll = "You Win";
+              $diceHand->setRollSum();
+          }
       }
 
       session()->put('die', serialize($die));
       session()->put('dice', serialize($dice));
       session()->put('diceHand', serialize($diceHand));
+      session()->put('rounds', serialize($rounds));
       session()->save();
 
       return view('dice', [
-          'message' => $validated,
-          'previousRoll' => $previousRoll ?? null
+          'message' => $validated ?? null,
+          'previousRoll' => $previousRoll ?? null,
+          'roboRoll' => $robotRolled ?? null
       ]);
     }
 }
