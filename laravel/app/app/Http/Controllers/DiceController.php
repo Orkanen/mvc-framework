@@ -47,9 +47,12 @@ class DiceController extends Controller
           $robotRolled = $rounds->roboSum();
           if ($robotRolled < 22 && $robotRolled > $diceHand->getRollSum()) {
               $previousRoll = "You Lose";
+              $rounds->score(0, 1);
           } else {
               $previousRoll = "You Win";
+              $rounds->score(1, 0);
           }
+          $rounds->addRound();
           $diceHand->setRollSum();
       } else {
           if ($request->amount == "dice1") {
@@ -63,12 +66,18 @@ class DiceController extends Controller
 
           if ($previousRoll > 21) {
               $previousRoll = "You Lose";
+              $rounds->score(0, 1);
               $diceHand->setRollSum();
+              $rounds->addRound();
           } elseif ($previousRoll == 21) {
               $previousRoll = "You Win";
+              $rounds->score(1, 0);
               $diceHand->setRollSum();
+              $rounds->addRound();
           }
       }
+      $currentScore = $rounds->score(0, 0);
+      $roundsPlayed = $rounds->rolledRounds();
 
       session()->put('die', serialize($die));
       session()->put('dice', serialize($dice));
@@ -79,7 +88,9 @@ class DiceController extends Controller
       return view('dice', [
           'message' => $validated ?? null,
           'previousRoll' => $previousRoll ?? null,
-          'roboRoll' => $robotRolled ?? null
+          'roboRoll' => $robotRolled ?? null,
+          'roundsPlayed' => $roundsPlayed ?? null,
+          'currentScore' => $currentScore ?? null
       ]);
     }
 }

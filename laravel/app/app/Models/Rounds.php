@@ -20,6 +20,8 @@ class Rounds
     private int $sum = 0;
     private string $roundHand = "";
     private int $roundsDone = 0;
+    private int $robotScore = 0;
+    private int $humanScore = 0;
 
     public function __construct()
     {
@@ -44,7 +46,7 @@ class Rounds
         return $this->sum;
     }
 
-    public function addRound(int $adding = 0)
+    public function addRound(int $adding = 1)
     {
         $this->roundsDone += $adding;
     }
@@ -62,5 +64,14 @@ class Rounds
     public function rolledRounds()
     {
         return $this->roundsDone;
+    }
+
+    public function score($human = 0, $robot = 0)
+    {
+        $this->humanScore += $human;
+        $this->robotScore += $robot;
+        $final = ("Human Score: " . $this->humanScore .
+        "/ Computer Score: " . $this->robotScore);
+        return $final;
     }
 }

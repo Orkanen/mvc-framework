@@ -1,6 +1,18 @@
-<p>You rolled:</p>
+<?php if(isset($roundsPlayed)) { ?>
+    <p>Rounds Played:</p>
+    {{ $roundsPlayed ?? null }}
+<?php } ?>
 
-<p>{{ $message ?? null }}</p>
+<?php if(isset($currentScore)) { ?>
+    <p>Current Score:</p>
+    {{ $currentScore ?? null }}
+<?php } ?>
+
+
+<?php if(isset($message)) { ?>
+    <p>You rolled:</p>
+    {{ $message ?? null }}
+<?php } ?>
 
 <?php if(isset($roboRoll)) { ?>
     <p>The robot rolled:</p>
