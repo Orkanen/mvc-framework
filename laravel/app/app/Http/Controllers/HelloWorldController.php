@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Student;
 
 class HelloWorldController extends Controller
 {
@@ -14,8 +15,9 @@ class HelloWorldController extends Controller
      */
     public function hello($message=null)
     {
+        $students = Student::all();
         return view('message', [
-            'message' => $message ?? "Hello World as default from within controller"
+            'message' => $students,
         ]);
     }
 }
