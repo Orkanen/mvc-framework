@@ -2,6 +2,6 @@
 
 <p>{{ $message }}</p>
 
-<a href="./server.php/dice"> Dice </a>
+<a href="./dice"> Dice </a>
 
-<a href="./server.php/pizzas"> ORM Pizza </a>
+<a href="./pizzas"> ORM Pizza </a>
