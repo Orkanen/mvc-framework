@@ -42,4 +42,5 @@ Route::get('/dice', [DiceController::class, 'index']);
 Route::post('/dice/roll', [DiceController::class, 'postIndex']);
 
 Route::get('/pizzas', [PizzaController::class, 'index']);
+Route::get('/pizzas/create', [PizzaController::class, 'create']);
 Route::get('/pizzas/{id}', [PizzaController::class, 'show']);

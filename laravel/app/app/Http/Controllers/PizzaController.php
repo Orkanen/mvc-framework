@@ -15,4 +15,19 @@ class PizzaController extends Controller
             'pizzas' => $pizzas,
         ]);
     }
+
+    public function create() {
+        $pizza = Pizza::create([
+            'base' => 'Thin & Crusty',
+            'type' => 'Hawaiian',
+            'name' => 'Tiger',
+        ]);
+        $pizza->save();
+        $pizza2 = Pizza::create([
+            'base' => 'Cheezy Crust',
+            'type' => 'Volcano',
+            'name' => 'Juice',
+        ]);
+        $pizza2->save();
+    }
 }
