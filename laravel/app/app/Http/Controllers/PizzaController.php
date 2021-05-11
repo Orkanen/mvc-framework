@@ -17,13 +17,13 @@ class PizzaController extends Controller
     }
 
     public function create() {
-        $pizza = Pizza::create([
+        $pizza = Pizza::updateOrCreate([
             'base' => 'Thin & Crusty',
             'type' => 'Hawaiian',
             'name' => 'Tiger',
         ]);
         $pizza->save();
-        $pizza2 = Pizza::create([
+        $pizza2 = Pizza::updateOrCreate([
             'base' => 'Cheezy Crust',
             'type' => 'Volcano',
             'name' => 'Juice',

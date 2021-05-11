@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\Dice;
 use App\Models\DiceHand;
 use App\Models\DiceGraphic;
+use App\Models\Game;
 use App\Models\Rounds;
 
 class DiceController extends Controller
@@ -24,11 +25,11 @@ class DiceController extends Controller
         $die = new Dice();
         $dice = new DiceGraphic();
         $diceHand = new DiceHand(1);
-        $rounds = new Rounds();
+        $game = new Game();
         session(['die' => serialize($die),
             'dice' => serialize($dice),
             'diceHand' => serialize($diceHand),
-            'rounds' => serialize($rounds)
+            'game' => serialize($game)
         ]);
         return view('dice', [
             'message' => $message ?? "0"
@@ -40,19 +41,19 @@ class DiceController extends Controller
       $die = unserialize(session()->pull('die'));
       $dice = unserialize(session()->pull('dice'));
       $diceHand = unserialize(session()->pull('diceHand'));
-      $rounds = unserialize(session()->pull('rounds'));
+      $game = unserialize(session()->pull('game'));
       //$previousRoll = $diceHand->getSum();
       if ($request->amount == "stop") {
-          $rounds->curRoll($diceHand->getRollSum());
-          $robotRolled = $rounds->roboSum();
+          $game->curRoll($diceHand->getRollSum());
+          $robotRolled = $game->roboSum();
           if ($robotRolled < 22 && $robotRolled > $diceHand->getRollSum()) {
               $previousRoll = "You Lose";
-              $rounds->score(0, 1);
+              $game->score(0, 1);
           } else {
               $previousRoll = "You Win";
-              $rounds->score(1, 0);
+              $game->score(1, 0);
           }
-          $rounds->addRound();
+          $game->addRound();
           $diceHand->setRollSum();
       } else {
           if ($request->amount == "dice1") {
@@ -66,31 +67,52 @@ class DiceController extends Controller
 
           if ($previousRoll > 21) {
               $previousRoll = "You Lose";
-              $rounds->score(0, 1);
+              $game->score(0, 1);
               $diceHand->setRollSum();
-              $rounds->addRound();
+              $game->addRound();
           } elseif ($previousRoll == 21) {
               $previousRoll = "You Win";
-              $rounds->score(1, 0);
+              $game->score(1, 0);
               $diceHand->setRollSum();
-              $rounds->addRound();
+              $game->addRound();
           }
       }
-      $currentScore = $rounds->score(0, 0);
-      $roundsPlayed = $rounds->rolledRounds();
+      $currentScore = $game->score(0, 0);
+      $gamePlayed = $game->rolledGame();
 
       session()->put('die', serialize($die));
       session()->put('dice', serialize($dice));
       session()->put('diceHand', serialize($diceHand));
-      session()->put('rounds', serialize($rounds));
+      session()->put('game', serialize($game));
       session()->save();
+
+      $roundsDb = Rounds::find(1);
+      if ($roundsDb == null) {
+          $roundsDb = Rounds::where('id', 1)->updateOrCreate([
+              'rounds' => "1",
+              'score' => $currentScore,
+          ]);
+      } else {
+          $roundsDb->rounds = "1";
+          $roundsDb->score = $currentScore;
+      }
+      $roundsDb->save();
 
       return view('dice', [
           'message' => $validated ?? null,
           'previousRoll' => $previousRoll ?? null,
           'roboRoll' => $robotRolled ?? null,
-          'roundsPlayed' => $roundsPlayed ?? null,
+          'gamePlayed' => $gamePlayed ?? null,
           'currentScore' => $currentScore ?? null
       ]);
+    }
+
+    public function highScore() {
+
+        $rounds = Rounds::find(1);
+
+        return view('message', [
+            'message' => $rounds->score,
+        ]);
     }
 }

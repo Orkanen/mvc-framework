@@ -40,6 +40,7 @@ Route::post('/yatzy/firstRoll', [YatzyView::class, 'reRoll']);
 Route::get('/dice', [DiceController::class, 'index']);
 //Route::get('/dice/{message}', [DiceController::class, 'index']);
 Route::post('/dice/roll', [DiceController::class, 'postIndex']);
+Route::get('/dice/score', [DiceController::class, 'highScore']);
 
 Route::get('/pizzas', [PizzaController::class, 'index']);
 Route::get('/pizzas/create', [PizzaController::class, 'create']);
