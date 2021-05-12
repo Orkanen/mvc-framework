@@ -74,4 +74,14 @@ class Game
         "/ Computer Score: " . $this->robotScore);
         return $final;
     }
+
+    public function roboScore()
+    {
+        return $this->robotScore;
+    }
+
+    public function humanScore()
+    {
+        return $this->humanScore;
+    }
 }

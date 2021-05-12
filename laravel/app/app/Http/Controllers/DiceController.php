@@ -85,16 +85,17 @@ class DiceController extends Controller
       session()->put('diceHand', serialize($diceHand));
       session()->put('game', serialize($game));
       session()->save();
+      $fullScore = ($game->humanScore() - $game->roboScore());
 
       $roundsDb = Rounds::find(1);
       if ($roundsDb == null) {
           $roundsDb = Rounds::where('id', 1)->updateOrCreate([
-              'rounds' => "1",
-              'score' => $currentScore,
+              'rounds' => $currentScore,
+              'score' => $fullScore,
           ]);
-      } else {
-          $roundsDb->rounds = "1";
-          $roundsDb->score = $currentScore;
+      } else if ($roundsDb->score <= $fullScore) {
+          $roundsDb->rounds = $currentScore;
+          $roundsDb->score = $fullScore;
       }
       $roundsDb->save();
 
@@ -112,7 +113,7 @@ class DiceController extends Controller
         $rounds = Rounds::find(1);
 
         return view('message', [
-            'message' => $rounds->score,
+            'rounds' => $rounds,
         ]);
     }
 }
