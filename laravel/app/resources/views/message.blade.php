@@ -11,10 +11,10 @@
 <?php } ?>
 
 
-<a href="./dice"> Dice | </a>
+<a href="./server.php/dice"> Dice | </a>
 
-<a href="./pizzas"> ORM Pizza | </a>
+<a href="./server.php/pizzas"> ORM Pizza | </a>
 
-<a href="./pizzas/create"> Create Pizza | </a>
+<a href="./server.php/pizzas/create"> Create Pizza | </a>
 
-<a href="./dice/score"> Highscore </a>
+<a href="./server.php/dice/score"> Highscore </a>
