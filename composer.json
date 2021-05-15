@@ -43,10 +43,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "test": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text",
-        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        ]
     },
     "extra": {
         "laravel": {
