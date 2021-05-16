@@ -8,6 +8,6 @@ before_script:
   - composer install --no-interaction
 
 script:
-  - vendor/bin/phpunit --coverage-text
-  - XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-text
-  - XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage
+  - XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-xml build
+  - XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-text build
+  - XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html build
