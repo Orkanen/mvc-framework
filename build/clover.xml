@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1621131273">
-  <project timestamp="1621131273">
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Console\Kernel.php">
+<coverage generated="1621187230">
+  <project timestamp="1621187230">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Console\Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
       </class>
@@ -13,7 +13,7 @@
       <line num="40" type="stmt" count="0"/>
       <metrics loc="41" ncloc="25" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Exceptions\Handler.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Exceptions\Handler.php">
       <class name="App\Exceptions\Handler" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
       </class>
@@ -23,13 +23,13 @@
       <line num="40" type="stmt" count="0"/>
       <metrics loc="41" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\Controller.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\Controller.php">
       <class name="App\Http\Controllers\Controller" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\ControllerBase.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\ControllerBase.php">
       <class name="Fian\Controller\ControllerBase" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
       </class>
@@ -43,7 +43,7 @@
       <line num="36" type="stmt" count="0"/>
       <metrics loc="38" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\ControllerTrait.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\ControllerTrait.php">
       <class name="Fian\Controller\ControllerTrait" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
       </class>
@@ -57,7 +57,7 @@
       <line num="36" type="stmt" count="0"/>
       <metrics loc="38" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\DiceController.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\DiceController.php">
       <class name="App\Http\Controllers\DiceController" namespace="global">
         <metrics complexity="11" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="66" coveredstatements="0" elements="69" coveredelements="0"/>
       </class>
@@ -132,7 +132,7 @@
       <line num="116" type="stmt" count="0"/>
       <metrics loc="119" ncloc="112" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="66" coveredstatements="0" elements="69" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\HelloWorldController.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\HelloWorldController.php">
       <class name="App\Http\Controllers\HelloWorldController" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
       </class>
@@ -142,7 +142,7 @@
       <line num="20" type="stmt" count="0"/>
       <metrics loc="23" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\PizzaController.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\PizzaController.php">
       <class name="App\Http\Controllers\PizzaController" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="12" coveredelements="0"/>
       </class>
@@ -160,7 +160,7 @@
       <line num="32" type="stmt" count="0"/>
       <metrics loc="33" ncloc="33" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="12" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Controllers\YatzyView.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Controllers\YatzyView.php">
       <class name="App\Http\Controllers\YatzyView" namespace="global">
         <metrics complexity="10" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="75" coveredstatements="0" elements="79" coveredelements="0"/>
       </class>
@@ -278,7 +278,7 @@
       <line num="215" type="stmt" count="0"/>
       <metrics loc="217" ncloc="195" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="108" coveredstatements="0" elements="112" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Functions.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Functions.php">
       <line num="25" type="stmt" count="0"/>
       <line num="26" type="stmt" count="0"/>
       <line num="28" type="stmt" count="0"/>
@@ -417,13 +417,13 @@
       <line num="312" type="stmt" count="0"/>
       <metrics loc="313" ncloc="238" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="136" coveredstatements="0" elements="136" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Kernel.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Kernel.php">
       <class name="App\Http\Kernel" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="66" ncloc="45" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\Authenticate.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\Authenticate.php">
       <class name="App\Http\Middleware\Authenticate" namespace="global">
         <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
       </class>
@@ -433,19 +433,19 @@
       <line num="20" type="stmt" count="0"/>
       <metrics loc="21" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\EncryptCookies.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\EncryptCookies.php">
       <class name="App\Http\Middleware\EncryptCookies" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="17" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\PreventRequestsDuringMaintenance.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\PreventRequestsDuringMaintenance.php">
       <class name="App\Http\Middleware\PreventRequestsDuringMaintenance" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="17" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\RedirectIfAuthenticated.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\RedirectIfAuthenticated.php">
       <class name="App\Http\Middleware\RedirectIfAuthenticated" namespace="global">
         <metrics complexity="4" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
       </class>
@@ -457,13 +457,13 @@
       <line num="30" type="stmt" count="0"/>
       <metrics loc="32" ncloc="24" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\TrimStrings.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\TrimStrings.php">
       <class name="App\Http\Middleware\TrimStrings" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="19" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\TrustHosts.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\TrustHosts.php">
       <class name="App\Http\Middleware\TrustHosts" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
       </class>
@@ -471,19 +471,19 @@
       <line num="17" type="stmt" count="0"/>
       <metrics loc="20" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\TrustProxies.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\TrustProxies.php">
       <class name="App\Http\Middleware\TrustProxies" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="23" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Http\Middleware\VerifyCsrfToken.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Http\Middleware\VerifyCsrfToken.php">
       <class name="App\Http\Middleware\VerifyCsrfToken" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="17" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Models\Dice.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Models\Dice.php">
       <class name="App\Models\Dice" namespace="global">
         <metrics complexity="4" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="3" elements="10" coveredelements="5"/>
       </class>
@@ -504,7 +504,7 @@
       <line num="38" type="stmt" count="0"/>
       <metrics loc="40" ncloc="40" classes="2" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="3" elements="12" coveredelements="5"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Models\DiceHand.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Models\DiceHand.php">
       <class name="App\Models\DiceHand" namespace="global">
         <metrics complexity="16" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="0" elements="40" coveredelements="0"/>
       </class>
@@ -550,7 +550,7 @@
       <line num="106" type="stmt" count="0"/>
       <metrics loc="108" ncloc="82" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="0" elements="40" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Models\Game.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Models\Game.php">
       <class name="App\Models\Game" namespace="global">
         <metrics complexity="12" methods="11" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="0" elements="33" coveredelements="0"/>
       </class>
@@ -589,25 +589,25 @@
       <line num="85" type="stmt" count="0"/>
       <metrics loc="87" ncloc="76" classes="1" methods="11" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="0" elements="33" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Models\Pizza.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Models\Pizza.php">
       <class name="App\Models\Pizza" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Models\Rounds.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Models\Rounds.php">
       <class name="App\Models\Rounds" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="14" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Models\User.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Models\User.php">
       <class name="App\Models\User" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
       <metrics loc="43" ncloc="28" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Providers\AppServiceProvider.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Providers\AppServiceProvider.php">
       <class name="App\Providers\AppServiceProvider" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
       </class>
@@ -617,7 +617,7 @@
       <line num="27" type="stmt" count="0"/>
       <metrics loc="28" ncloc="18" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Providers\AuthServiceProvider.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Providers\AuthServiceProvider.php">
       <class name="App\Providers\AuthServiceProvider" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
       </class>
@@ -626,7 +626,7 @@
       <line num="29" type="stmt" count="0"/>
       <metrics loc="30" ncloc="20" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Providers\BroadcastServiceProvider.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Providers\BroadcastServiceProvider.php">
       <class name="App\Providers\BroadcastServiceProvider" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
       </class>
@@ -636,7 +636,7 @@
       <line num="20" type="stmt" count="0"/>
       <metrics loc="21" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Providers\EventServiceProvider.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Providers\EventServiceProvider.php">
       <class name="App\Providers\EventServiceProvider" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
       </class>
@@ -644,7 +644,7 @@
       <line num="31" type="stmt" count="0"/>
       <metrics loc="32" ncloc="22" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
     </file>
-    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Providers\RouteServiceProvider.php">
+    <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\ci\framework\laravel\app\app\Providers\RouteServiceProvider.php">
       <class name="App\Providers\RouteServiceProvider" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
       </class>
