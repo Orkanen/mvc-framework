@@ -32,11 +32,6 @@ Route::get('/', function () {
 Route::get('/hello', [HelloWorldController::class, 'hello']);
 Route::get('/hello/{message}', [HelloWorldController::class, 'hello']);
 
-Route::get('/yatzy', [YatzyView::class, 'index']);
-Route::get('/yatzy/destroy', [YatzyView::class, 'destroy']);
-Route::get('/yatzy/firstRoll', [YatzyView::class, 'firstRoll']);
-Route::post('/yatzy/firstRoll', [YatzyView::class, 'reRoll']);
-
 Route::get('/dice', [DiceController::class, 'index']);
 //Route::get('/dice/{message}', [DiceController::class, 'index']);
 Route::post('/dice/roll', [DiceController::class, 'postIndex']);
