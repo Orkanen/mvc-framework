@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1621131273">
-  <project timestamp="1621131273">
+<coverage generated="1621211616">
+  <project timestamp="1621211616">
     <file name="C:\Users\Orkanen\dbwebb-kurser\mvc\me\orm\framework\laravel\app\app\Console\Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
